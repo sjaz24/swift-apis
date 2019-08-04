@@ -486,7 +486,7 @@ public extension TransposedConv2D {
             filterShape.0, filterShape.1, filterShape.2, filterShape.3])
         self.init(
             filter: Tensor(glorotUniform: filterTensorShape, generator: &generator),
-            bias: Tensor(zeros: [filterShape.3]),
+            bias: Tensor(zeros: [filterShape.2]),
             activation: activation,
             strides: strides,
             padding: padding)
@@ -517,7 +517,7 @@ public extension TransposedConv2D {
             filterShape.0, filterShape.1, filterShape.2, filterShape.3])
         self.init(
             filter: Tensor(glorotUniform: filterTensorShape, seed: seed),
-            bias: Tensor(zeros: [filterShape.3]),
+            bias: Tensor(zeros: [filterShape.2]),
             activation: activation,
             strides: strides,
             padding: padding)
