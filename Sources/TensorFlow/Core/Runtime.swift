@@ -442,7 +442,7 @@ public enum _RuntimeConfig {
     ///
     /// If the value is true when running tensor computation for the first time in the process, INFO
     /// log from TensorFlow will also get printed.
-    static public var printsDebugLog = false
+    static public var printsDebugLog = true
 
     /// Specifies the verbose log level in TensorFlow; a higher level prints out more log. Only
     /// meaningful when `printsDebugLog` is true, and must be within [0, 4] in that case.
